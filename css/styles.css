@@ -862,7 +862,7 @@ color: var(--primary-bg-color);
 
   /* Footer forms */
 
- .title-footer.mail {
+.title-footer.mail {
 font-weight: 700;
 font-size: 14px;
 line-height: 1.14;
