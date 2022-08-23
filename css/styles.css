@@ -517,17 +517,7 @@ color:var(--primary-bg-color);
 
 /* Постоянные клиенты */
 
-.icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  fill: currentColor;
-  margin-top: auto;
-  margin-bottom: auto;
 
-
-
-}
 
 .client-company {
   display:flex;
@@ -931,7 +921,14 @@ color: var(--primary-bg-color);
   padding-top:10px;
   padding-bottom: 10px;
   padding-right: 28px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
+  }
+
+  .footer-sub-button:hover,
+  .footer-sub-button:focus {
+    background-color: #188CE8;
   }
   
   .footer-sub-button svg {
@@ -946,6 +943,23 @@ color: var(--primary-bg-color);
   
   
     /* Modal form */
+
+
+    .icon-close {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      fill: currentColor;
+      margin-top: auto;
+      margin-bottom: auto;
+    
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+    }
+    
+    .icon-close:hover,
+    .icon-close:focus {
+      color: var(--accent-color);
+    }
   
     textarea {
       resize: none;
@@ -1055,7 +1069,6 @@ color: var(--primary-bg-color);
   margin: auto auto;
   color:var(--primary-bg-color);
   background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
   
@@ -1065,6 +1078,12 @@ color: var(--primary-bg-color);
   
   transition: background-color 250ms  cubic-bezier(0.4, 0, 0.2, 1),  box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor:pointer;
+  }
+
+  .modal-submit-button:hover,
+  .modal-submit-button:focus {
+    background-color: #188CE8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   }
   
   .policy-options {
